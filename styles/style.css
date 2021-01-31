@@ -1,0 +1,455 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.accueilphoto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../public/images/accueil.jpg");
+    background-size: cover;
+    height: 500px;
+    color: white;
+    text-shadow: 2px 2px 10px #706969;
+}
+
+.accueilphoto div {
+    padding: 1px;
+    line-height: 50px;
+}
+
+.accueiltext {
+    padding-top: 5%;
+}
+
+.accueiltext p {
+    padding-top: 11px;
+    line-height: 1.8;
+}
+
+.center {
+    padding-left: 15%;
+}
+
+.navbar{
+    margin-left: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+    margin: 8px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(207, 137, 15);
+}
+
+.navbar-light .navbar-nav .nav-link:focus {
+    color: rgb(207, 137, 15);
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: rgb(190, 127, 19);
+}
+
+.navbar-light .navbar-nav .nav-link.login {
+    color: rgb(190, 127, 19);
+}
+
+.abc {
+    border-radius: 8px;
+    background-color: #fff;
+    color: #082e4c;
+    padding: 9px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 12px 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.abc:hover {
+    color: rgb(207, 137, 15);
+}
+
+.button {
+    float: right;
+    margin-left: auto;
+    margin-right: 20%;
+}
+
+.titrealigne {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.titrealigne h1, .titrealigne h3 {
+    padding: 20px;
+    text-align: center;
+}
+
+.titrealigne a {
+    border-radius: 8px;
+    background-color: #b06238;
+    color: white;
+    padding: 0 20px 0 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.titrealigne a:hover {
+    background-color: #d77a46;
+    box-shadow: 2px 2px 10px #070303;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.bois {
+    background-image: url("../public/images/wood copy.jpg");
+    width: 100%;
+    background-size: 100vw 120px;
+    height: 120px;
+    color: white;
+}
+
+.boisaligne {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.accueiltext {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 20px;
+    width: 70%;
+    margin: auto;
+}
+
+.services {
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+.services a {
+    padding: 2%;
+    color: #663d11;
+    font-size: 20px;
+    transition: 0.1s;
+    display: inline;
+    text-decoration: none;
+}
+
+.services a:hover {
+    color: white;
+}
+
+.divcouverture {
+    background-image: url("../public/images/Couvertures/image3-1.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 371px;
+    width: 370px;
+    transition: 0.5s;
+    border-radius: 8px;
+}
+
+.divouvrage {
+    background-image: url("../public/images/Ouvrages/image3-2.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 371px;
+    width: 370px;
+    position: relative;
+    box-shadow: 0 15px 17px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    border-radius: 8px;
+}
+
+.divcharpente {
+    background-image: url("../public/images/Charpentes/image3-1.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 371px;
+    width: 370px;
+    position: relative;
+    box-shadow: 0 15px 17px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    border-radius: 8px;
+}
+
+.divouvrage:hover, .divcouverture:hover, .divcharpente:hover {
+    box-shadow: 2px 2px 10px #070303;
+}
+
+.divcharpente:hover > .servicebutton, .divcouverture:hover > .servicebutton, .divouvrage:hover > .servicebutton {
+    background-color: #b06238;
+    opacity: 0.9;
+
+}
+
+.servicebutton {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: block;
+    padding: 9%;
+    background-color: rgb(169, 160, 160);
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 15px 17px 0 rgba(0, 0, 0, 0.1);
+}
+
+.slide {
+    margin-top: 5%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    box-shadow: 0 0 15px black;
+}
+
+.devis {
+    margin-top: 5%;
+    height: 150px
+}
+
+.li {
+    list-style-type: none;
+}
+
+.footer1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer {
+
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    height: 110px;
+    background-color: #b06238;
+}
+
+.icon {
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+}
+
+.icons a {
+    justify-self: center;
+    padding: 10px;
+    color: black;
+    transition: 0.3s;
+}
+
+.icons a:hover {
+    color: #efcdbc;
+}
+
+.tel {
+    display: flex;
+    flex-direction: row;
+    margin-right: 38%;
+    justify-content: space-between;
+
+}
+
+.tel a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    align-content: center;
+    transition: 0.3s;
+}
+
+.tel a:hover {
+    color: #ffffff;
+    text-shadow: 0 15px 17px 0 rgba(62, 59, 59, 0.1);
+}
+
+.footerwood {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../public/images/wood copy.jpg");
+    height: auto;
+}
+
+.footercopyright {
+    margin: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.email {
+    margin-right: 30%;
+}
+
+.email p {
+    color: white;
+}
+
+.address {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    color: #c8c5c5;
+}
+
+.email p {
+    font-size: larger;
+}
+
+.address p {
+    font-size: larger;
+    padding-left: 10px;
+}
+
+.copyright {
+    padding: 1%;
+    color: #a29999;
+    text-align: center;
+}
+
+hr {
+    margin-left: 20%;
+    align-self: center;
+    border: 0;
+    clear: both;
+    display: block;
+    width: 60%;
+    background-color: #ffffff;
+    height: 1px;
+}
+
+.footercopyright input[type=email] {
+    border-radius: 5px;
+    border-style: none;
+    padding: 12px;
+    width: 200px;
+    height: 30px;
+    display: inline-block;
+}
+
+.click {
+    border-style: none;
+    font-size: 15px;
+    padding: 5px 32px;
+    cursor: pointer;
+    border-radius: 8px;
+    color: #ffffff;
+    background-color: gray;
+    transition: 0.5s;
+    border-bottom: none;
+}
+
+.click:hover {
+    background-color: #d77a46;
+    text-shadow: 0 15px 17px 0 rgba(62, 59, 59, 0.1);
+}
+
+.email {
+    margin-right: 30%;
+}
+
+.email p {
+    font-size: larger;
+    color: white;
+}
+
+.address {
+    display: flex;
+    flex-direction: row;
+}
+
+.address p {
+    font-size: larger;
+    padding-left: 10px;
+}
+
+.copyright {
+    padding: 1%;
+    color: #8c8b8b;
+    text-align: center;
+}
+
+button {
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 11px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #b06238;
+}
+
+button:hover {
+    background-color: #d77a46;
+    box-shadow: 0 15px 17px 0 rgba(10, 5, 5, 0.1);
+}
+
+.ajouter{
+    color: #d77a46;
+    transition: .2s;
+}
+
+.ajouter:hover{
+    text-decoration: none;
+    color: #1a100a;
+}
+
+@media (max-width: 1000px) {
+    .services {
+        margin-left: 20%;
+        flex-direction: column;
+    }
+
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+}
